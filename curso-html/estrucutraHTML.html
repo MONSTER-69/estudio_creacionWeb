@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introduccion a HTML 5 </title>
+</head>
+<body>
+    
+
+    <h3>elemento vacio  (hr)</h3>
+
+    <p>titulo antes del hr </p>
+    <!-- tiene muchos atributos los culaes se pueden conultar en: https://developer.mozilla.org/es/docs/Web/HTML/Element/hr -->
+    <hr title="simina" id="hr_ejemplo" width="75%" size="20% " >
+
+
+    <h3>atributos</h3>
+    <!-- UN atrubuto en html va dentro de la etiqueta de apertura como en el siguiente, en p,  -->
+    <p class="editor-namde">prueba de atrubutos dentro de las etiquetas. <br> en este caso la etiqueta es una clase para css</p>
+
+    <h4>agregar atributos a una etiqeuta img</h4>
+    <!-- en la etiqueta img, el atributo src, contiene la direccion en donde esta la imagen, puede ser una sitio web como es en este caso o desde una caprtepa local o carpeta del archivo.
+     
+    alt: es un texto el cual en caso que no este dispoible la imagen como tal, es un texto descriptipvo que representa lo que deberia de ir en la imagen. igual es importante que este por el tema de los talkback para gente ciega -->
+    <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png" alt=" imagen_firefox">
+
+    <!-- es un ejemplo de la direccion de una direccion de la carpeta.  la etiqeuta <width> es para definir el tamanio de esta, en este caos lo pongo en porcentaje, por el tema de la responsabilidad
+    al igual que esra la etiqeuta <height>, no es lo ideal usar ambos en una imagren, lo ideal es usar una u otra, ya que puede con el cambio de pantallas se deforme. la respoinsabilidad. 
+    -->
+    <br>
+    <img src="/img/183549557_2933429800250780_7513104564189702854_n.jpg" alt="loctes" width="30%">
+
+    <h3>atributos booleanos.</h3>
+
+    <!-- aveces algunas etiquetas contiene atributos booleannos, como el caso de la etiqueta <input>, la cual es el atributos que esta abajo, el cual impide que se introduzca informacion sobre el input.  -->
+    <input type="text" disabled="disabled">
+
+    <br>
+
+    <input type="text">
+
+    <h3>anatomia del documento HTML</h3>
+    <p>en forma de coemntatrio </p>
+
+    <!-- 
+    los editores de codigo, como en el caso de VS code, nos construyen la estrucutra basica pero necesitamos como se construye la pagina. 
+    
+    <html></html>: envuelve todo el contenido de la pagina. 
+
+    <head></head>: Este elemento actúa como un contenedor para todo lo que desea incluir en la página HTML, que no es el contenido que la página mostrará a los espectadores. Esto incluye palabras clave y una descripción de la página que aparecería en los resultados de búsqueda, CSS para dar estilo al contenido, declaraciones de conjuntos de caracteres y más.
+
+    <meta>: Este elemento representa metadatos que no pueden ser representados por otros elementos HTML relacionados con metadatos, como <base>, <link>, <script>, <style> o <title>. El atributo charset especifica la codificación de caracteres para su documento como UTF-8, que incluye la mayoría de los caracteres de la gran mayoría de los lenguajes humanos escritos
+
+    <title></title>: Esto establece el título de la página, que es el título que aparece en la pestaña del navegador en la que se carga la página
+
+    <body></body>: Contiene todo el contenido que se muestra en la página, incluidos texto, imágenes, vídeos, juegos, pistas de audio reproducibles o cualquier otra cosa.
+    
+    
+    
+    -->
+
+    <br>
+    <h3>referencias de entidades: incluir caracteres especiales.</h3>
+
+    <!-- 
+    en HTML los caracteres como, <,>, ',", &, son caracteres especiales, por lo uqe para podere usalos sin probelma den algun texto que se necesita, para esto surgieron propiedades, o una conbinacion de caracteres que repersentan lo mismo 
+
+    Carácter literal	Referencia de carácter equivalente
+    <	                &lt;
+    >	                &gt;    
+    "	                &quot;
+    '	                &apos;
+    &	                &amp;
+    
+
+    -->
+
+    <p>ejemplo: <br> esta etiqurta es un parrafo qeu se abre con &lt;p&gt;</p>
+
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- el atributo charset lo que hace es que especifica la codificacion de caracteres del documento. en este esta usando con conjunto de caracteres universales que es el UTF-8,  -->
+
+    <!-- 
+    la etiqeuta de metadatos, incluye atributos como <name>: especifica el tipo de metadato a tratar
+    y 
+    <content>: especififca el contenido del metadato en si. 
+        
+    es bueno es cierta manera esoecificar el autor que creo la pagina que se ssta consultando, puede ser util para contactar con dicho autor. 
+
+
+    ---agregar iconos persoanlizadoa a tu sitio
+    una forma de que el sitio se vea mucho mas rico en todos sus aspectos, seria en asignarle un icono. 
+    para agregar un icono, de preferencia que sea de extension .ico, pero igual los navegadores aceptan extension .gif y .png,
+    
+    este icon aaprece en la parte de arriba de nuestra pagina, en la pestania. 
+    
+    -->
+    <meta charset="UTF-8">
+     <!-- <meta name="erik" content="conjunto de caracteres " charset="ISO-8859-1"> -->
+    <!-- <link rel="shoertcut icon" href="/que-hay-en-la-cabecera/icon/temple_of_heaven_building_icon_263771.ico" type="image/x-icon"> -->
+
+    <meta property="og:image" content="https://developer.mozilla.org/mdn-social-share.png">
+    <meta property="og:description" content="This is an example page to demonstrate usage of metadata on web pages.">
+    <meta property="og:title" content="Metadata; The HTML &lt;head&gt;, on MDN">
+
+    <!-- todo docuemtno HTML, si se esta usnado solo los 3 piladres principales de la web que son HTML, CSS y JS, dentro del head van con una etiqeuta llamada <link> que solo tiene de apertura, esta se encarga de apuntar a aquella pagina en donde se enceuntran los documentos CSS, porque se puede incluir dentro de aqui pero no es lo ideal, lo ideal es que cada docuemtno solo contenga codigo de HTMl o CSS y JS, 
+    para el caso de JS se utiliza la etiqeuta <script></script>, el cual que al igual que CSS direcciona al documento que se encarga de que la pagina sea dinamica
+    
+    se puede tener 1 o mas docuemntos CSS, lo ideal seria solo 1, pero se puede para disitntas paginas. tiene estulos diferentes algunas cosas, ya depende de lo que se esta desarrollando, el nombre por defecto, como el documneto inical en HMTL se le debe de llamar index.html, en css se le llama como styles.css-->
+    <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!--usamos ifual src para direccionar el docuemnto de que contiene el codigo JS, este si que puede ser mas 1 documento, lo ideal seria eso, cumpliendo con el principip SOLID, esto se pude ver mas con JS, como tal este si es un lenguaje orientado a objetos, pero igual puede ser estrucutrado, etc..   -->
+    <script src="script.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta examples</title>
+</head>
+<body>
+    <!-- 
+    el header es la parte que no se muestra al usuario. esta contiene infromacion de la pagina como el titulo en la etiqeuta <title>, como enlaces <link> hacia un docuemnto de estilos CSS o a uno de JS. 
+    
+    Los metadatos son datos que describen datos, y HTML tiene una forma «oficial» de introducir metadatos en un documento — el elemento <meta>. Por supuesto, el resto de los elementos de los que hablaremos en este artículo también se podrían considerar metadatos. Hay muchos diferentes tipos de elementos <meta> que se pueden incluir en el <head> de tu página, pero no vamos a intentar explicarlos todos en esta etapa porque resultaría demasiado confuso
+    -->
+    <h1>&lt;h1&gt; element</h1>
+
+    <p>Ejemplo en japonés: ご飯が熱い。</p>
+
+    <ul>
+        <li>simona</li>
+        <li>orales</li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+editor grafico de imagenes: GIMP
+
+programa de FTP: 
+
+sistema de automatizacion: 
+
+
+primeros pasos con HTML: 
+
+HTML es un legnuaje de marcado, que indica a los navegadores web como estrucutra las paginas web que visita. HTML consiste en una serie de elementos, que utiliza para encerrar, envolver o marcar diferentes partes del contenido para que aparezca o actúe de cierta manera, 
+
+--------------------------------------------------------------------------
+Anatomia de un elemento HTML: 
+
+la gran mayoria de las etiquetas tienen llaves de apertura y de cierre, a que nos referimos a esto, las etiquetas son palabras reservadas marcadas con (<>) por ejemplo tenemos la etiqueta que le indica al navegador que es una linea de texto. ( <p>My cat is very grumpy</p> ), 
+
+las etiquetas estan confromados por la apaertura que son los corchetes angulaes dentro una letra o plabra clave en HTML, seguido del contenido que se quiere remarcar, y la etiqeta de cierre con una diagonal que antecede a la misma letra o plabara con la que se abrio, </p> 
+
+------------------------------------------------------------------------
+
+elementos anidados. 
+
+los elementos se pueden colocar dentro de otros elementos, lo que se concoe como anidacion de elementos. esto es muy util cunado se quiere remarcar algo dentro den contenido o hacer por ejemplo una imgane una conexion de hypervinculo 
+
+<p>Mi gato es <strong>muy</strong> gruñon</p>
+
+Hay una forma correcta e incorrecta de anidar. En el ejemplo anterior, abrimos primero el elemento p, luego abrimos el elemento strong. Para una anidación adecuada, primero debemos cerrar el elemento strong, antes de cerrar p.
+
+------------------------------------------------------------------------------
+
+elementos vacios
+
+como se dijo con anterioridad, la mayoria de las etiquetas cumplen con la norma de abertura y cierre, pero no todos, por ejemplo la etiqueta <img>, solo cuenta con la apertura de la etiqueta. estos se denominan elementos vacios. entre los que se encuentra 
+
+<area> : define un área dentro de un mapa de imagen que tiene áreas cliqueables predefinidas. Un mapa de imágen permite que áreas geométricas en una imagen sean asociadas con un hipervínculo.
+
+<base> : especifica la dirección URL base que se utilizará para todas las direcciones URL relativas contenidas dentro de un documento. Sólo puede haber un elemento <base> en un documento. cuenta con los siguientes atributos: 
+    href:La dirección URL base que se usa en todo el documento para las direcciones URL relativas. Si no se especifica este atributo, este elemento debe venir antes de cualesquiera otros elementos con atributos cuyos valores son direcciones URL
+
+    target:Un nombre o una palabra clave que indica la ubicación predeterminada para navegar por el resultado de hipervínculos o formas, para los elementos que no tienen una referencia explícita del objetivo . Es un nombre o una palabra clave para un contexto de navegación (por ejemplo: pestaña, ventana o marco en línea).
+
+        _self: Carga el resultado en el mismo contexto de navegación que el actual.
+
+        _blank: Carga el resultado en un nuevo contexto de navegación sin nombre
+
+        _parent:Cargar el resultado en el contexto de navegación padre del actual. Si no hay padre, esta opción se comporta de la misma manera que _self.
+
+        _top: Carga el resultado en el contexto de nivel superior de navegación (es decir, el contexto de navegación que es un ancestro de la actual, y no tiene padre). Si no hay padre, esta opción se comporta de la misma manera que _self.
+
+<br> :  produce un salto de línea en el texto (retorno de carro). Es útil para escribir un poema o una dirección, donde la división de las líneas es significante.
+
+<col>: permite especificar propiedades para una columna o un grupo de ellas. 
+(atributos): https://developer.mozilla.org/es/docs/Web/HTML/Element/col
+
+<embed> : representa un punto de integración para una aplicación externa o de contenido interactivo (en otras palabras, un plug-in).
+
+<hr>: representa un cambio entre lostextos, este se representa en el navegador como una linea horizontal en la pantalla. aunque ahora es una repsentacion semantica sobre la extrucutrua de html, para la linea se usa mas CSS. 
+
+mas elementos vacios: https://developer.mozilla.org/es/docs/Glossary/Void_element
+
+pero uno de los mas importates seria el 
+
+<img>: 
+https://developer.mozilla.org/es/docs/Web/HTML/Element/img
+
+la cual se encarga de insertar imganes dentro de nuestra pagina web. 
+
+
+
+-------------------------------------------------------------------------------------------------------------
+
+-atributos
+
+un atributo, como en cualquier lenguje con aspectos que van an modificar un elemento, en caso de html, sus distitntas etiquetas contienen pueden contener los mismos atributos y otras contienen atributos propios de cada etiqueta. 
+
+Un atributo debe tener:
+
+Un espacio entre él y el nombre del elemento. (Para un elemento con más de un atributo, los atributos también deben estar separados por espacios).
+El nombre del atributo, seguido de un signo igual.
+Un valor de atributo, envuelto con comillas de apertura y cierre.
+
+
+
+
