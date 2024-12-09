@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formateo de texto avanzado</title>
+</head>
+<body>
+    <p>los elementos descritos en el anterior <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals" target="_blank">fundamenteo de texto HTML</a> son los basicos, en este encontrarmeos unos cunatos no tan usados pero de igual importancia para el desarrollo de una buena web.</p>
+
+    <hr>
+
+    <h2>listas de descripciones</h2>
+    <p>el proposito de estas lists es marcar un conjunto de elementos y sus descripciones asociados, como terminos y definiciones o preguntas y respuestas. el contenedor utilizado para el tipo de estas loistas es (dl), y cada elemento va dentro de un (dt), y cada descripcion dentro un (dd), veamos ele ejemplo </p>
+
+
+    <dl>
+        <dt>soliloquio</dt>
+        <dd>
+            En las obras dramáticas, corresponde a cuando un personaje se habla a sí
+            mismo para representar sus pensamientos o sentimientos internos y, en el
+            proceso, transmitirlos a la audiencia (pero no a otros personajes).
+        </dd>
+        <dt>monólogo</dt>
+        <dd>
+            En las obras dramáticas, corresponde a cuando un personaje habla de sus
+            pensamientos en voz alta para compartirlos con el público y cualquier otro
+            personaje presente.
+        </dd>
+        <dt>aparte</dt>
+        <dd>
+            En las obras dramáticas, corresponde a cuando un personaje comparte un
+            comentario solo con la audiencia para dar efecto cómico o dramático. Suele
+            ser un sentimiento, un pensamiento o información adicional.
+        </dd>
+    </dl>
+
+
+    <hr>
+    <h2>citas</h2>
+    <p><b>citas en bloque independiente. </b>Si una sección de contenido a nivel de bloque (ya sea un párrafo, varios párrafos, una lista, etc.) se cita en otro lugar, debes envolverla dentro de un elemento (blockquote) para indicarlo, e incluye una URL que apunte a la fuente de la cita dentro de un atributo cite.</p>
+
+    <p>A continuación se muestra una cita en bloque independiente...</p>
+    <blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Element/blockquote">
+        <p> El <strong>elemento HTML <code>&lt;blockquote&gt;</code></strong> (o
+        <em>elemento HTML de cita en bloque independiente</em>) indica que el texto
+        al que delimita es una cita ampliada.
+        </p>
+    </blockquote>
+
+    <p><b>citas en linea.</b> funcioan de la mimsa manrea ecepto que se usa un elemento (q)</p>
+    <p>
+        El elemento de cita — <code>&lt;q&gt;</code> — se
+        <q cite="https://developer.mozilla.org/es/docs/Web/HTML/Element/q"
+          >utiliza en para citas breves que no requieren saltos de párrafo.</q
+        >
+      </p>
+      
+
+
+    <hr>
+    <h2>abreviaturas</h2>
+    <p>el elemento (abbr) se usa para envolver una abreivatura o acronico y proporciona una expansion completa del termino, un ejemplo de esto seria:</p>
+
+    <p>
+        Usamos <abbr title="Lenguaje de marcado de hipertexto">HTML</abbr> para
+        estructurar nuestros documentos web.
+      </p>
+      
+      <p>
+        Creo que el <abbr title="Reverendo">Rev.</abbr> Green lo hizo en la cocina con
+        la motosierra.
+      </p>
+      
+    <hr>
+    <h2>marcar la informacion de contacto. </h2>
+
+    <p>HTML tiene un elemnto para marcar la informacion de un contacto. el cual es: (address), lo que hace es envolver los datos de un contacto. se le puede dar difrentes estilos. </p>
+
+    <address>
+        <p>
+          Chris Mills<br />
+          Manchester<br />
+          The Grim North<br />
+          Reino Unido
+        </p>
+      
+        <ul>
+          <li>Tel: 01234 567 890</li>
+          <li>Email: me@grim-north.co.uk</li>
+        </ul>
+      </address>
+      
+
+    <hr>
+    <h2>superindice y subindice</h2>
+
+    <p>en ocaciones se quereiren utilizar superindice y subindice para marcar elementos como fechas, formulas, ecuaciones que tengan un signficado concreto como: </p>
+
+    <p>Nací el 25<sup>th</sup> de mayo de 2001.</p>
+    <p>La fórmula química de la cafeína es C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.
+    </p>
+    <p>If x<sup>2</sup> es 9, x debe ser igual 3 o -3.</p>
+
+
+    <hr>
+    <h2>represnetcacion del codigo infromaatico</h2>
+    <p>hay una seria de elementos que podemos usar para representar el codigo informatico, tenemeos </p>
+
+    <ul>
+        <li><b>(code)(/code)</b>, para marcar fragmentos genericos de codigo</li>
+        <li><b>(pre)</b>respeta los espacios, los mostrara en el navegador tal y como esta escrito en nuestro editor de codiggo</li>
+
+        <pre>simon     a      ss</pre>
+        <li><b>(var)</b> para narcar nombre de varibales</li>
+        <li><b>(Kbd)</b> para marcar entradas de teclado</li>
+        <li><b>(samp)</b> para marcar la salida de un porgrama de ordenador</li>
+    </ul>
+
+    <pre><code>
+        struct Nodo *crearNodo(int dato){
+            struct Nodo *nuevo=(struct Nodo *)malloc(sizeof(struct Nodo ));
+            nuevo->dato=dato;
+            nuevo->sig=NULL;
+
+            return (nuevo);
+        }
+    </code></pre>
+
+    <hr>
+    <h1>marcar horas y fechas</h1>
+
+    <p>la etiqueta (time) marca la hora y fecha de un formato legime por la maquina </p>
+    <time datetime="2020-01-20">20 enero 2020</time>
+    <hr>
+</body>
+</html>
+
+<!-- nos quedamos en lo mero bueno:  https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure-->

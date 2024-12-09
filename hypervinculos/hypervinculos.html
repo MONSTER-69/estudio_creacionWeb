@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <h2 id="inicio">crear hipervinculos</h2>
+    <p>los elementos verdaderametne importantes en HTML son los enlaces, lo que hizo que se creara la web</p>
+    <hr>
+    <h2>que es un hipervinculo </h2>
+    <p>
+        los hipervinculos nos permiten, vincular documentoes a otros docuemntos o recursos, un URL puede apuntar a archivos HTMKL, archivos de tecto, imagenes, docuemnteos de texto, videos, audio y cualquier cosas que se pueda mostrar y este dispoible en la web. 
+    </p>
+
+    <hr>
+    <h2>anatomia de un enlace</h2>
+
+    <p>un enlace basuco de crea uncluyento el texto y el enlace medniate un ancla (a), el cual tiene un atributo llamado (href) que es el atributo que hara referencia al URL al contenido que queremos enviar. </p>
+
+    <p>
+        crear un enlace: 
+        <br><a href="https://www.mozilla.org/es-ES/" title="que es esta vaina">moziila</a>
+        <br>
+        es importante que en ancla (a), tenga un texto o algo en donde los usuarios puedan hacer clik e ir a ese enlace, otro atributo que se tiene es (title="") el cual contiene infromacion adicional al enlcae, puede ser util para las herramienta de talkback o cunado el link ya no este dispobible
+    </p>
+
+    <p>se puede anlcar un link a lo que sea, como podrmeo ver ene l sigueiten ejemplo</p>
+
+    <a href="https://www.mozilla.org/es-ES/">
+        <img src="mozilla-image.png" alt="Logotipo de Mozilla que dirige a la página inicial de Mozilla">
+    </a>
+    <hr>
+    <h2 id="acercamineto_rutas">primer acercaminteo a URLs y rutas</h2>
+
+    <p>un URL es una secucia de caracteres que definen en donde se encuentra situado algo en la web, como puede ser las paginas antes ancladas en este documento, aqui hay 2 formas de apuntar a archivos, las URLs que apuntan a una direccion web las culaes son las mas snecillas, solo copiamos y pegamos el link, pero en donde mas se complica es dentro del proyecto, nunca especificar rutas fuera de la carpeta dle proyecto, porque al final esas rutas solo serviran dentro de nuestr acomputadora, fuera no <br> en esta otra forma igual hay 2, cunado el docuemnto esta adelando de nuestra ruta actual o atras de nuestr ruta actual</p>
+
+    <h3>adelante de nuestra ruta</h3>
+    <p>cunado esta adelante de bnuestra ruta lo que hacemos en VS code es poner (/), entonces nos deplejara los distitas rutas que tiene nuestro proyecto adelante de nuestr aruta actua, ejem (ruta_actual/imagenes/imagen1.jpg)</p>
+
+    <br>
+    <p>algo asi se miraria dentro de (href="") en nuestro HTML</p>
+
+    <h3>atras de nuestra ruta actual</h3>
+
+    <p>cunado tenemos atras de nustra ruta lo que se hace es como en linux o cmd para ir una posicion atras (../), esto lo que le esta diciendo al SO o al moter de busqueda que queremos ir una caprta atras, y ponemos tantas como tan atras queros ir, hasta en disco C:/ si es necesaroa</p>
+
+    <br>
+    <p>es posible apuntar hacia alguna seccion de nuestro archivo, para esto, lo mas comun que se va a ver es que cada elemento contenga un ID, esto es importante, mas adelante se va a ver con CSS y JS y posterior con REACT, en donde en el href, el hipervinculo se va a ver mas como (href="index.html#direccion_envio") </p>
+    <a href="hypervinculos.html#inicio">inicio</a>
+
+    <p>puede ser idual en el caso de indices</p>
+    <hr>
+    <h2>URLs absolutas y relativas</h2>
+
+    <p><strong>URL absoluta:</strong> hace refrencia a la direccion definica por su ubicacion web que incluye el prptocolo y el nombre del dominio, ejme(http://www.example.com/projects/index.html)</p>
+
+    <p><strong>URL relativa:</strong> hace referencia a una direccion que depende de la posicion del arvhio desde donde se utiliza, por ejemplo que queremos hacer refecencia a un docuemntos PDF delante de la posicion actual de nuestra ruta tan solo direccionamocos como (href="direccion_actual/archivo.pdf")</p>
+    <hr>
+    <h2>buenas practica en el uso de los enlaces</h2>
+
+    <p>utilizar enlaces relativos siempre que sea pósible. cuando se este haciendoe referecnia a un enlace dentro del mismo proyecto o dentro de la misma pagina lo ideal es enlaces relativas, ya si se hace referencia a otra web es cunado se usa enlaces absolutas. </p>
+
+    <p>utiliza el atributo download al enlacar una descarga. si quremos hhacer refeencia a a una descarga, podimos usar el atributo download</p>
+
+    <a href="/hypervinculos/1710789696932746.png" download="imagen.png">imagen</a>
+    <hr>
+</body>
+</html>
