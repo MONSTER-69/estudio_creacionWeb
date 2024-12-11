@@ -1,0 +1,158 @@
+<!-- la parte importante de la estrucutra en html, son las estrucutra de bloques, que delimintan las partes de la pagina, 
+ 
+partes basicas de un documento:
+
+el como esta configurada cada pagina puede ser de tantas froemas disitintas, pero la gran mayoria tiene los sigueintes elementos para estrucuturar su pagina web. 
+
+estos elementos son. 
+
+encabezado:
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>estrucurua de la pagina web</h1>
+    <hr size="5px" style="background-color: black" />
+
+    <h2><b>encabezado:</b></h2>
+    <p>
+      Normalmente formado por una gran franja que cruza la parte superior de la
+      página con un gran título, un logotipo y quizás un lema. Esta parte suele
+      permanecer invariable mientras navegas entre las páginas de un mismo sitio
+      web.
+    </p>
+
+    <hr size="5px" style="background-color: black" />
+
+    <h2><b>barrade navegacion</b></h2>
+    <p>
+      Son los enlaces a las secciones principales del sitio web. Normalmente
+      está formada por un menú con botones, enlaces o pestañas. Al igual que el
+      encabezado, este contenido suele permanecer invariable en las diferentes
+      páginas del sitio; tener un menú inconsistente en tu página web conducirá
+      a los usuarios a la confusión y frustración. Muchos diseñadores web
+      consideran que el menú de navegación forma parte del encabezado y que no
+      posee un componente individual, aunque no es necesario que sea así; de
+      hecho, algunos argumentan que tener ambos componentes por separado es
+      mejor por motivos de accesibilidad porque los lectores de pantalla pueden
+      leer mejor ambos elementos si están separados.
+    </p>
+
+    <hr size="5px" style="background-color: black" />
+    <h2><b>contenido principal (main)</b></h2>
+    <p>
+      Es la gran parte central de la página y contiene la mayor parte del
+      contenido particular de una página web concreta; por ejemplo, el video que
+      quieres ver, la narración que quieres leer, el mapa que quieres consultar,
+      los titulares de las noticias, etc. ¡Esta es la parte que definitivamente
+      debe variar mucho de una página a otra de tu sitio web!
+    </p>
+    <hr size="5px" style="background-color: black" />
+    <h2><b>barra lateral</b></h2>
+    <p>
+      Suele incluir algún tipo de información adicional, enlaces, citas,
+      publicidad, etc. Normalmente está relacionada con el contenido principal
+      de la página (por ejemplo, en una página de noticias, la barra lateral
+      podría contener la biografía del autor o enlaces a artículos
+      relacionados), pero en otras ocasiones encontraras elementos recurrentes
+      como un menú de navegación secundario.
+    </p>
+    <hr size="5px" style="background-color: black" />
+    <h2><b>pie de pagina</b></h2>
+    <p>
+      Es la parte inferior de la página, que generalmente contiene la letra
+      pequeña, el copyright o la información de contacto. Es el sitio donde se
+      coloca la información común (al igual que en el encabezado), pero esta
+      información no suele ser tan importante o es secundaria con respecto a la
+      página en sí misma
+    </p>
+    <hr size="5px" style="background-color: black" />
+
+    <h2>HTML para dar estrucuutra la contenido</h2>
+
+    <p>
+      HTML dispone de las etiqeutas adecuacadas para usar y esybalecer estas
+      secciones semanticas por ejemploÑ
+    </p>
+
+    <p>encabezado:&lt;header&gt; &lt;/header&gt;</p>
+    <p>menu de navegacion: &lt;nav&gt; &lt;/nav&gt;</p>
+    <p>
+      contenido princpal: &lt;main&gt; &lt;/main&gt;<br />
+      este contiene varias secciones, esl el cotnenido principal de nustra
+      pagina, esta variaba entre paginas pero por lo genreal contiene elemenots
+      como: <br /><b>&lt;article&gt; &lt;/article&gt;</b>:se utiliza para
+      representar un contenido independiente y de auto-contenido. Un artículo es
+      un componente que puede distribuirse y reutilizarse de forma
+      independiente, como un artículo de revista, una entrada de blog, una
+      publicación de foro, un comentario de usuario, o cualquier otro contenido
+      que tenga sentido por sí mismo. este va seguido de un titulo definido por
+      un h1-h6
+
+      <br /><b>&lt;section&gt; &lt;/section&gt;:</b>representa una sección
+      genérica independiente de un documento, que no tiene un elemento semántico
+      más específico para representarla. Las secciones siempre deben tener un
+      título, con muy pocas excepciones. <br /><b>&lt;div&gt; &lt;/div&gt;:</b
+      >es el contenedor genérico para el contenido. No tiene efecto en el
+      contenido o en el diseño hasta que se le aplica un estilo de alguna manera
+      usando CSS (p. ej. se le aplica un estilo directamente o se aplica algún
+      tipo de modelo de diseño como Flexbox a su elemento principal)
+    </p>
+
+    <p>
+      barra lateral: &lt;aside&gt; &lt;/aside&gt; a menudo va dentro del (main)
+    </p>
+    <br />
+    <p>pie de pagina:&lt;footer&gt; &lt;/footer&gt;</p>
+
+    <hr size="5px" style="background-color: black" />
+    <h2>
+      <b>vamos un ejemplo de como estara estrucurraod una pagina simple </b>
+    </h2>
+
+    <a href="ejemplo_estrucutra.html" target="_blank"
+      >ejmplo de la estrucutra</a
+    >
+    <hr size="5px" style="background-color: black" />
+    <h2><b>envolturas no semanticas</b></h2>
+    <p>
+      A veces hay situaciones en las que no encuentras un elemento semántico
+      adecuado para agrupar ciertos elementos o englobar cierto contenido.
+      Podrías querer agrupar ciertos elementos para referirte a ellos como una
+      entidad que comparta cierto CSS o JavaScript. Para casos como esos, HTML
+      dispone del elemento &lt;div&gt y del elemento &lt;span&gt.
+      Preferentemente estos elementos se deberán utilizar con sus atributos
+      (class),
+    </p>
+
+    <h3>
+      <i><b>span:</b></i>
+    </h3>
+    <p>
+      s un elemento no-semántico que se utiliza en el interior de una línea. Se
+      utiliza cuando no se nos ocurre el uso de ningún otro elemento semántico
+      de texto en el que incluir el contenido, o si no se desea añadir ningún
+      significado específico. Por ejemplo
+    </p>
+    <h3>
+      <i><b>div:</b></i>
+    </h3>
+    <p>
+      es un elemento de bloque no-semántico; lo utilizaras cuando no se te
+      ocurra el uso de otro elemento semántico mejor, o si no deseas añadir
+      ningún significado concreto
+    </p>
+
+    <hr size="5px" style="background-color: black" />
+  </body>
+</html>
+
+<!-- nos quedmaos en: https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter -->

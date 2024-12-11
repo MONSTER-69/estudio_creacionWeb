@@ -1,0 +1,65 @@
+HTML
+
+al parecer lo primero que nos va a parecer en freecodecamp es tan solo sobre los formatos de los encabezados como del < H1 al h6> recordadno que cada etiqueta tiene un formato de abertura y escritura, por un ejemplo <h1></h1>, 
+
+recordad ando que HTML es un lenguaje de etiqueta, por lo que la mayoría son etiquetas que tienen una apertura y un cierre, 
+
+la forma en como podemos escribir parrafos, texto dentro de HTML es con la etiqueta <p></p>
+
+COMENTARIOS: la forma de como hacer comentarios en HTML es con <!--contenido->, al igual que en cualquier leguaje los comentatios son necesarios para documnetar el codigo, y saber que es lo que hace. 
+
+etiquetas de contenido: a partir del HTML5, podemos encampular la seccion principal de nuestra paguina con el instruccion (<main></main>)
+
+imagenes: la forma de ingresar imagenes hay de diferentes formas, una de ellas es con la etiqueta <img> en la cual estara la imagen y esta igual tiene varias propiedades, podemos usar 2 maneras, una es una imagen directa en internet o desde nuestro servidor o pc. la forma en como hacerla desde una imagen en internet, es con el atributo (src="URL") en el cual dentro de las comillas va la url donde se encunetra la imagen. toda imagen debe de contener una breve, muy corta descripcion de lo que es la iuamgen esto es con el atributo (alt="descripcion"). a travez de nuestro servidor o desde nuestra pc se hace con el mismo atributo pero en vez de una direccion web se pone la direccion en la pc o en el servidor en donde se localiza la imagen como por ejemplo (src="C:/dmrx/Desktop/paguina/simon.jpg) algo asi se va a mirar. (la etiqueta <img> es una de las etiquetas de las cuales no tiene cierre, por lo que solo se abre y ya.)
+
+LINK: la forma de ir a otras paguinas web, o imcluso secciones dentro de nuestra paguina. esto se logra con la etiqueta <a href="link">texto</a>, podremos ver como se hace esto en secciones de  nuestra paguina. con esto podemos hacer varias cosas, como dentro de un parrafo agregar links, podemos jugar con esto de muchas fromas como a l ahora de poner un texto, una etiqueta ( <p> ), puede haber un link. 
+
+TARGET: la etiqueta ( <a> ) tiene otra propiedad, una que hemos visto a lo largo de la web la cual nos permite que a la hora de darle click a alguna link que tengamos este nos lo va a abrir en otra paguina, esto nos servirara para no perdernos en donde estabamos en la paguina anterior. esto se hace medinate el atributo (target ="_blank")
+
+
+SECTION: la etiqueta ( <section> ) es una de las mas usadas para separar el contenido dentro de una poguina web, esto para tener un control de las partes que componene la pagguina, se establece el section y destro de el se desarrolla la paguina, la caja, podemos verlo asi, como una caja que contiene una parte despues otro section que contiene otra parte. otra caja. y esto claro que lleva un orden, todo lo que vaya dentro del section ya indexado y asi sucesivamete.
+
+
+
+listas: hay 2 tipos de listas la ordenadas y las no oredenadas, en primer lugar veremos las listas no ordenadas. en la cual se establece con la etiqueta 
+( <ul> ). esto solo le dice a html que quiere una lista desordenada, la forma en como ingresamos elemento a esto es con la eqiueta ( <li> - list item). estas van anidadas a <ul>. LISTAS ORDENASAS. la otra forma de como tener listas es mediante una lista ordenadas con lo cual se hace con ( <ol></ol> - ordered list) la forma de como poner elementos en este sigue sinedo el mismo solo que este va a venir enumerado. 
+
+
+FIGURE: epresenta contenido independiente, a menudo con un título. Si bien se relaciona con el flujo principal, su posición es independiente de éste. Por lo general, se trata de una imagen, una ilustración, un diagrama, un fragmento de código, o un esquema al que se hace referencia en el texto principal, pero que se puede mover a otra página o a un apéndice sin que afecte al flujo principal.
+
+este como en img necesit una descripcion en caso de que la imagen no este por alguna razon, se pueda tener una descripcion la cual nos puede servir para saber que era o que es la imagen. en el caso de figure es una etiqueta la cual es ( <figcapotion> {esta si tiene cierre}) que va anidada a la etiqueta FIGURE. 
+
+em: en html hay varias etiquetas que nos ayudan a resaltar palabras como lo pede ser ( <em></em> ), ( <strong></strong> ), 
+
+
+form: representa una sección de un documento que contiene controles interactivos que permiten a un usuario enviar información a un servidor web. 
+
+action: la etiqueta actiosn le indica a la web a donde se deben de ir los datos del formulacion, puede ser otra paguina de la misma web, una base de datos, etc. como pude ser ( <form action="/submit-url"></form> )
+
+input: los elementos input nos permiten agregar datos desde un dormulario web de diferentes formas, estos igual no necesitan un cierre. Hay diferentes tipos de elementos input, los cuales los puedes crear con el atributo type, puede ser yb campo donde va una contraseña (password), un boton de reinicio (reset) o simplemento texto (text). en cada entrada de dato se le debe de indicar que tipo de accion o dato se esta realizadno esto se realiza con el atributo en la etiqueta input de ( <name> ). como puede ser ( <input type="email" name="email">), como con las imagenes es una forma de identificar que es cada cosas que se envia o se guarda de la paguina a alguna base de datos, archivo binario, etc. un (placeholder) en un input es un atributo el cual lo hemos visto mucho, ya que este es el que sale y no da una idea que es lo que va en el espacio como al iniciar en facebook el que dice dentro de las casillas donde va el correo o la contraseña que va el (correo o ususario. en algunas webs, es necesario que algunos espacios esten, como puede ser la contraseña, correo, numero de CVV, etc. esto se hace con el qtrinuto ( required {solo se pone esta palabra}). 
+
+button: pero ahora requrimos de un boton que nos permita realizar estas acciones, esto se hace con el elemete (<button></button>). si no se le da un atributo de hacia donde enviar informacion al boton, este lo enviara a la direccion del atributo ( action ). pero esto puede traer confucion por lo que lo ideal es agregar el atributo al button de ( type="submit" ). un RADIO BUTTON es un tipo de boton en el cual nos va a funcionar para seleccionar una respuesta dentro de un grupo de insicos por asi decirlo.
+
+label: un elemento ( <label> ) nos ayuda a asociar un texto con un elemeto input. podemos usar ele ejemplo de ( <label><input type="radio"> cat</label> ) en donde se va a seleccionar en la palabra "cat". en el caso de que solo fuera la etiqueta ( <button> ) se tendra que seleccionar durecto en la casilla pero con este se peude seleccionar la palabra y la casilla sera seleccionada. ATRIBUTO ID. este atributo no es especial de este, si no que en todos lo pueden tener, este como puede ser un ID en la videa real es un identificador unico de esa etiqueta, 
+
+atributo name: en un grupo de inputs tipo radio, pueden estar seleccionados varios a ala vez, esto solo se puede con ciertas entradas, pero en el casod e que solo deberia de ser una, para esto se utiliza el atributo name, el cual debe de tener el mismso valor en todos los input de valor radio.
+
+atributo value: los atributo value se usan para poder enviar los datos, por lo general su contenido es el mismo nombre que el ID. 
+
+
+
+
+bibliografia: 
+
+https://developer.mozilla.org/es/docs/Web/HTML/Element/form
+
+
+
+
+
+
+
+
+
+
+ 
